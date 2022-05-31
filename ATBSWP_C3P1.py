@@ -5,10 +5,10 @@
 def collatz(number):
     if number % 2 == 0: # Determines if number is even, using modulo
         print("The number you entered, " + str(number) + ", is even!")
-        print(number / 2) # UNEXPECTED: A float is printed. Why?
+        print(int(number / 2)) # Int() to correct for float due to division
     elif number % 2 == 1: # Determines if number is odd, using modulo
         print("The number you entered, " + str(number) + ", is odd!")
-        print(3 * number + 1)
+        print(int(3 * number + 1)) # Int() to correct for float due to division (not needed)
     else:
         print("I'm uncertain what happened...") # Should never be printed, why was it? 
 
