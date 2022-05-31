@@ -10,7 +10,7 @@ def collatz(number):
         print("The number you entered, " + str(number) + ", is odd!")
         print(3 * number + 1)
     else:
-        print("I'm uncertain what happened...") # Should never be printedab, why was it? 
+        print("I'm uncertain what happened...") # Should never be printed, why was it? 
 
 # Requesting input for function
 print("What is your number?")
