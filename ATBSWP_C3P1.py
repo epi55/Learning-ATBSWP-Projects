@@ -18,4 +18,4 @@ try:
     number = int(input())
     collatz(number)
 except ValueError:
-    print("Your input cannot be used in the fuction. Please use numerals.")
+    print("Your input cannot be used in the function. Please use numerals.")
