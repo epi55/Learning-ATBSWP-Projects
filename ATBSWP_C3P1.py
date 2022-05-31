@@ -19,6 +19,3 @@ try:
     collatz(number)
 except ValueError:
     print("Your input cannot be used in the fuction. Please use numerals.")
-
-# Running the function
-# collatz(number)
