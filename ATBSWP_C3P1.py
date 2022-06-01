@@ -1,4 +1,4 @@
-# The Collatz Sequence (Chapter 3, Project 1)
+# The Collatz Sequence and Input Validation (Chapter 3, Project 1 and 2)
 # Source: Automate the Boring Stuff With Python
 
 # Defining the function
