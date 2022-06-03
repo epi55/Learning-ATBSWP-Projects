@@ -1,6 +1,11 @@
 # Comma Code (Chapter 4, Project 1)
 # Source: Automate the Boring Stuff With Python
 
+'''
+Question
+Write a function that takes a list value as an argument and returns a string with all the items separated by a comma and a space, with 'and' inserted before the last item. 
+'''
+
 # Defining the function
 def comma_code(items):
     item_length = len(items) # Define the length of the list.
