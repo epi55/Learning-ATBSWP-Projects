@@ -1,11 +1,16 @@
 # Character Picture Graph (Chapter 4, Project 2)
 # Source: Automate the Boring Stuff With Python
 
+'''
+Question
+Copy the previous grid value, and write code that uses it to print the image [rotated by 90 degrees clockwise to be a heart top-bottom, not left-right].
+'''
+
 # Define the function
 def picture_graph(pic):
     for i in range(len(pic[0])):
         for j in range(len(pic)):
-            print(pic[j][i], end='')
+            print(pic[j][i], end = '')
         print()
 
 '''
