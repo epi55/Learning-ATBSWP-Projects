@@ -1,6 +1,15 @@
 # The Collatz Sequence and Input Validation (Chapter 3, Project 1 and 2)
 # Source: Automate the Boring Stuff With Python
 
+'''
+Question
+Write a function named collatz() that has one parameter named number. If number is even, then collatz() should print number // 2 and return this value. If number is odd, then collatz() should print and return 3 * number + 1.
+
+Then write a program that lets the user type in an integer and that keeps calling collatz() on that number until the function returns the value 1.
+
+Add try and except statements to the previous project to detect whether the user types in a noninteger string.
+'''
+
 # Defining the function
 def collatz(number):
     if number % 2 == 0: # Determines if number is even, using modulo
