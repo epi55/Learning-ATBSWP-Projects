@@ -14,7 +14,7 @@ def isValidChessBoard():
     print("What piece would you like to move?")
     piece = input()
     while piece not in thePieces:
-        print("Invalid piece. Try again. Your options are: wpawn, wrook, wknight, wbishop, wqueen, wking, bpawn, brook, bknight, bbishop, bqueen, and bking.")
+        print("Invalid piece. Try again. Your options are: " + str(thePieces) + ".")
         piece = input()
     print("Valid piece.")        
 
@@ -25,8 +25,10 @@ def isValidChessBoard():
         print("That is not a valid spot. Please try again. Your options are: a1:h8.")
         startLoc = input()
     while (startLoc,piece) not in theBoard.items(): # Determines if this spot has the selected piece on the board.
-        print(piece + " is not located on " + startLoc + ". Please review the current board setup and try again.")
-        print(theBoard) # May need join formatting.
+        print(piece + " is not located on " + startLoc + ". Please review the current board setup for " + piece + " and try again.")
+        for key,value in theBoard.items():
+            if piece == value:
+                print(piece + " is located at " + key)
         startLoc = input()
     print("Valid: " + piece + " is at " + startLoc + ".")
 
