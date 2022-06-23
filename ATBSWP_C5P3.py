@@ -8,27 +8,32 @@ Write a function named addToInventory(inventory, addedItems), where the inventor
 
 # Imports and supports
 
-# Define the function
+# Define the functions
+def displayInventory(inventory):
+
+    print('Inventory:')
+    item_total = 0
+
+    for k, v in inventory.items():
+        print(str(v) + " " + str(k))
+        item_total += v
+    
+    print('Total number of items: ' + str(item_total))
+
 def addToInventory(inventory, addedItems):
+
+    updatedInventory = dict(inventory)
+
     for item in addedItems:
         updatedInventory.setdefault(item, 0)
         updatedInventory[item] += 1
     
     return updatedInventory
-      
-def displayInventory(inventory):
-    print('Inventory:')
-    item_total = 0
-    for k, v in inventory.items():
-        print(str(v) + " " + str(k))
-        item_total += v
-    print('Total number of items: ' + str(item_total))
 
 # Define the dictionaries and lists
 inventory = {'gold coin': 42, 'rope': 1}
 dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
-updatedInventory = dict(inventory)
 
 # Call the function
-inventory = addToInventory(inventory, dragonLoot)
-displayInventory(inventory)
+updatedInventory = addToInventory(inventory, dragonLoot)
+displayInventory(updatedInventory)
